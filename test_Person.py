@@ -1,5 +1,4 @@
 import unittest
-from .person import Person
 
 class Testing(unittest.TestCase):
     def setting_name(self):
