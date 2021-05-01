@@ -8,7 +8,7 @@ class Testing(unittest.TestCase):
 
     def test_boolean(self):
         person = Person()
-        letters = person.person.set_name('Antonio')
+        letters = person.set_name('Antonio')
         name = person.get_name(0)
         self.assertEqual(name, 'Antonio')
 
