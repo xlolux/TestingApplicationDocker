@@ -4,7 +4,7 @@ from .person import Person
 class Testing(unittest.TestCase):
     def setting_name(self):
         person = Person()
-         letters = person.person.set_name('Antonio')
+        letters = person.person.set_name('Antonio')
         self.assertEqual(letters, 7)
 
     def test_boolean(self):
