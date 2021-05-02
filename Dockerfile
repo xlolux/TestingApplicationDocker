@@ -2,3 +2,4 @@
 FROM python:3.8
 # Install pipenv
 RUN pip install pipenv
+RUN pip install pytest
