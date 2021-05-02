@@ -1,16 +1,11 @@
-name: Pytest with Pipenv & Docker
-# workflow triggered by any push on any branch
+name: Pytest  Docker
 on: [push]
 jobs:
   build:
     name: Pytest in Pipenv
-    # runs on the latest Ubuntu
     runs-on: ubuntu-latest 
-    # runs within your Docker container
     container:
-      image: docker://<hub-username>/<repo-name>:latest
-    # checkout your code from your repository
-    # and runs pytest in your pipenv environment
+      image: docker://xlolux/example:latest
     steps:
     - uses: actions/checkout@v2
     - name: Test with pytest
