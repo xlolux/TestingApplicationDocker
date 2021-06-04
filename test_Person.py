@@ -10,7 +10,7 @@ class Testing(unittest.TestCase):
         person = Person()
         letters = person.set_name('Antonio')
         name = person.get_name(0)
-        self.assertEqual(name, 'Antonio Pulido')
+        self.assertEqual(name, 'Antonio')
 
 if __name__ == '__main__':
     unittest.main()
